@@ -1,0 +1,139 @@
+{
+  "href": "/api/v2/LifeCycle_patients",
+  "meta": {
+    "href": "/api/v2/LifeCycle_patients",
+    "hrefCollection": "/api/v2/LifeCycle_patients",
+    "name": "LifeCycle_patients",
+    "label": "patients",
+    "attributes": [
+      {
+        "href": "/api/v2/LifeCycle_patients/meta/displayName",
+        "fieldType": "STRING",
+        "name": "displayName",
+        "label": "displayName",
+        "description": "name",
+        "attributes": [],
+        "maxLength": 255,
+        "auto": false,
+        "nillable": false,
+        "readOnly": true,
+        "labelAttribute": true,
+        "unique": true,
+        "visible": true,
+        "lookupAttribute": true,
+        "isAggregatable": false
+      },
+      {
+        "href": "/api/v2/LifeCycle_patients/meta/firstName",
+        "fieldType": "STRING",
+        "name": "firstName",
+        "label": "firstName",
+        "description": "first name",
+        "attributes": [],
+        "maxLength": 255,
+        "auto": false,
+        "nillable": true,
+        "readOnly": false,
+        "labelAttribute": false,
+        "unique": false,
+        "visible": true,
+        "lookupAttribute": false,
+        "isAggregatable": false
+      },
+      {
+        "href": "/api/v2/LifeCycle_patients/meta/lastName",
+        "fieldType": "STRING",
+        "name": "lastName",
+        "label": "lastName",
+        "description": "family name",
+        "attributes": [],
+        "maxLength": 255,
+        "auto": false,
+        "nillable": true,
+        "readOnly": false,
+        "labelAttribute": false,
+        "unique": false,
+        "visible": true,
+        "lookupAttribute": false,
+        "isAggregatable": false
+      },
+      {
+        "href": "/api/v2/LifeCycle_patients/meta/birthdate",
+        "fieldType": "DATE",
+        "name": "birthdate",
+        "label": "birthdate",
+        "description": "day of birth",
+        "attributes": [],
+        "auto": false,
+        "nillable": true,
+        "readOnly": false,
+        "labelAttribute": false,
+        "unique": false,
+        "visible": true,
+        "lookupAttribute": false,
+        "isAggregatable": false
+      },
+      {
+        "href": "/api/v2/LifeCycle_patients/meta/birthplace",
+        "fieldType": "STRING",
+        "name": "birthplace",
+        "label": "birthplace",
+        "description": "place of birth",
+        "attributes": [],
+        "maxLength": 255,
+        "auto": false,
+        "nillable": true,
+        "readOnly": false,
+        "labelAttribute": false,
+        "unique": false,
+        "visible": true,
+        "lookupAttribute": false,
+        "isAggregatable": false
+      }
+    ],
+    "labelAttribute": "displayName",
+    "idAttribute": "displayName",
+    "lookupAttributes": ["displayName"],
+    "isAbstract": false,
+    "writable": true,
+    "languageCode": "en",
+    "permissions": [
+      "READ_METADATA",
+      "DELETE_METADATA",
+      "DELETE_DATA",
+      "UPDATE_METADATA",
+      "COUNT_DATA",
+      "READ_DATA",
+      "UPDATE_DATA",
+      "ADD_DATA",
+      "AGGREGATE_DATA"
+    ]
+  },
+  "start": 0,
+  "num": 20,
+  "total": 3,
+  "items": [
+    {
+      "_href": "/api/v2/LifeCycle_patients/jane_doe",
+      "displayName": "jane_doe",
+      "firstName": "jane",
+      "lastName": "doe",
+      "birthplace": "metropolis"
+    },
+    {
+      "_href": "/api/v2/LifeCycle_patients/john_doe",
+      "displayName": "john_doe",
+      "firstName": "john",
+      "lastName": "doe",
+      "birthdate": "1976-03-13",
+      "birthplace": "new york"
+    },
+    {
+      "_href": "/api/v2/LifeCycle_patients/papa_doe",
+      "displayName": "papa_doe",
+      "firstName": "papa",
+      "lastName": "doe",
+      "birthplace": "new york"
+    }
+  ]
+}
