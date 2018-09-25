@@ -24,6 +24,11 @@ yarn run lint
 ```
 yarn run test:unit
 ```
+Add `--coverage` to run with code cov 
+
+To debug test ``node --inspect-brk ./node_modules/.bin/vue-cli-service test:unit
+``
+
 
 ### Run your end-to-end tests
 ```
