@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h5 class="card-title">{{label}}</h5>
-        <p class="card-text">{{value}}</p>
+        <div class="text-muted">{{label}}</div>
+        <p>{{value}}</p>
     </div>
 </template>
 
