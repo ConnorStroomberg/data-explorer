@@ -16,7 +16,7 @@ import EntityCardElement from '@/components/EntityCardElement'
 
 export default {
   name: 'EntityCard',
-components: {EntityCardElement},
+  components: { EntityCardElement },
   props: {
     entityData: Object,
     metaData: Object

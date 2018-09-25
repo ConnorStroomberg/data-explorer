@@ -1,12 +1,16 @@
 import { shallowMount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import DataExplorer from '@/components/DataExplorer.vue'
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message'
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg }
+describe('DataExplorer.vue', () => {
+  it('renders when passed called', () => {
+    const collectionData = {
+      meta: {
+        label: 'demo entity label'
+      }
+    }
+    const wrapper = shallowMount(DataExplorer, {
+      propsData: { collectionData }
     })
-    expect(wrapper.text()).toMatch(msg)
+    expect(wrapper.text()).toMatch('demo entity label')
   })
 })

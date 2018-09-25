@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="mg-data-explorer">
     <h1>{{ collectionData.meta.label }}</h1>
     <div>
       <div v-for="item in collectionData.items" :key="item.displayName">
@@ -15,7 +15,7 @@ import EntityCard from '@/components/EntityCard'
 
 export default {
   name: 'DataExplorer',
-  components: {EntityCard},
+  components: { EntityCard },
   props: {
     collectionData: Object
   }
